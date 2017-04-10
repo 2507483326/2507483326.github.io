@@ -2,8 +2,11 @@
 <html lang="Zh-cn">
 <head>
 	<meta charset="UTF-8">
-	<title>首页</title>
+	<meta name="keywords" content="第三建筑，娄底第三建筑，建筑，施工，工程">
+	<meta name="description" content="湖南省娄底市第三建筑工程有限公司自组建成立以来, 秉承“以科技为先导、以创新求发展、以质量求生存、以诚信待客户”的企业精神，实行“质量第一，信誉第一，用户至上”的经营理念，铸就了一个又一个建筑精品，赢得了市场的广泛认可和社会的一致好评。 ">
+	<title>第三建筑-娄星区首家贰级建安施工企业</title>
 	<link rel="stylesheet" type="text/css" href="static/css/index.css">
+	<link rel="shortcut icon" type="image/x-icon" href="static/images/logo_small.jpg" media="screen">
 </head>
 <body>
 	<!-- header -->
@@ -18,7 +21,7 @@
 				<li class="active"><a href="./index.html">首页</a></li>
 				<li><a href="./synopsis.html">公司简介</a></li>
 				<li><a href="./project.html">工程业绩</a></li>
-				<li><a href="./honor.html">资质荣誉</a></li>
+				<li><a href="./contact_us.html">联系我们</a></li>
 			</ul>
 		</div>
 	</div>
@@ -172,11 +175,10 @@
 	<!-- 底部 -->
 	<div class="footer_box">
 		<div class="inner_box">
-			<p>建筑公司 版权所有 © 2008-2016 湘ICP备8888888</p>
-			<p>本页面内容为网站演示数据，前台页面内容都可以在后台修改。</p>
+			<p>第三建筑公司 版权所有 © 2012-2020 湘ICP备8888888</p>
 			<div class="powered_by_metinfo">Powered by 
-				<a href="#">Epat</a>
-				 5.3.14
+				<a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2507483326">Epat</a>
+				 V1.00.2017.0406
 			</div>
 		</div>
 	</div>
@@ -184,6 +186,19 @@
 <script src="static/js/jquery1.42.min.js"></script>
 <script src="static/js/jquery.SuperSlide.2.1.1.js"></script>
 <script src="static/js/imgReady.js"></script>
+<!-- 自适应js -->
+<script type="text/javascript">
+	var softAdaption = function(){
+		var window_width = $(window).width();
+		if (window_width < 1200) {
+			$('.inner_box').css({
+				'width':(window_width - 30) + 'px',
+				'padding': '0 15px'
+			});
+		}
+	}
+	softAdaption();
+</script>
 <script type="text/javascript">
 	$('.banner').slide({
 		mainCell:".bd ul",
@@ -208,7 +223,8 @@
 	var loop_transverse = function(loop_obj){
 		loop_obj.list.each(function(index,ele){
 			$(this).css({
-				'left':loop_obj.width*index
+				'left':loop_obj.width*index,
+				'width':(loop_obj.width - 4) + 'px'
 			});
 		});
 		/*判断是否可以轮播*/
@@ -277,9 +293,12 @@
 	loop_transverse({
 		'prev':$('.engineering_list_box .prev'),
 		'next':$('.engineering_list_box .next'),
-		'width':300,
+		'width':($('.engineering_list_box').width() / 4),
 		'list':$('.engineering_list_box .list'),
 		'max_length':4
+	});
+	$('.engineering_list_box .list_box').css({
+		'width':($('.engineering_list_box').width() - 4) + 'px'
 	});
 
 	$(window).scroll(function(){
