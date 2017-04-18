@@ -1,0 +1,524 @@
+*{margin: 0px;padding: 0px;text-decoration: none;list-style-type: none;}
+body{background: #f2f2f2;font: 14px/1.5 "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",Roboto,Arial,sans-serif;}
+.inner_box{width: 1200px;margin: 0 auto;overflow: hidden;}
+img{border: 0px;}
+hr{margin: 22px 0;border: none;border-top: 1px solid #e4eaec;}
+.box_title h2{font-size: 36px;text-align: center;font-weight: 300;margin-bottom: 11px;color: #37474f;}
+.box_title p{font-size: 16px;font-weight: 300;text-align: center;color: #5e7387;}
+h1,h2,h3,h4,h5{font-family: "Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",Roboto,Arial,sans-serif;}
+.substance p{text-indent: 2em;}
+
+/* header */
+.header_bar{height: 60px;background: #fff;}
+.header_bar .logo{float: left;}
+.header_bar .logo_box{float: left;height: 60px;line-height: 60px;}
+.header_bar .logo_box img{display: inline-block;vertical-align: middle;height: 50px;}
+.header_bar .nav_bar{float: right;}
+.header_bar .nav_bar.animation_active li:not(.active){
+	-webkit-animation:slide-top .5s ease-out both;
+	-o-animation-name:slide-top .5s ease-out both;
+	animation-name:slide-top .5s ease-out both;
+} 
+.header_bar .nav_bar li{float: left;margin-left: 40px;}
+.header_bar .nav_bar li a{height: 60px;line-height: 60px;padding: 0 15px;color: #2a333c;}
+.header_bar .nav_bar li a:hover,.header_bar .nav_bar li.active a{color: #4e97d9;}
+
+/* banner */
+.banner{font-size: 0px;position: relative;height: 900px;overflow: hidden;}
+.banner .bd{height: 900px;}
+.banner .bd img{width: 100%;height: 900px;}
+.banner .hd{position: absolute;text-align: center;height: 26px;bottom: 20px;width: 100%;left: 0;}
+.banner .hd li{display: inline-block;margin: 3px;cursor: pointer;height: 10px;width: 10px;border-radius: 50%;background: #fff;
+/* IE HACK */
+zoom: 1;
+*display: inline;
+/* older safari/Chrome browsers */  
+    -webkit-opacity: 0.25;  
+    /* Netscape and Older than Firefox 0.9 */  
+    -moz-opacity: 0.25;  
+    /* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/  
+    -khtml-opacity: 0.25;  
+    /* IE9 + etc...modern browsers */  
+    opacity: .25;  
+    /* IE 4-9 */  
+    filter:alpha(opacity=25);  
+    /*This works in IE 8 & 9 too*/  
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";  
+    /*IE4-IE9*/  
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=25); 
+}
+.banner .hd li.on{
+/* older safari/Chrome browsers */  
+    -webkit-opacity: 1;  
+    /* Netscape and Older than Firefox 0.9 */  
+    -moz-opacity: 1;  
+    /* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/  
+    -khtml-opacity: 1;  
+    /* IE9 + etc...modern browsers */  
+    opacity: 1;  
+    /* IE 4-9 */  
+    filter:alpha(opacity=100);  
+    /*This works in IE 8 & 9 too*/  
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";  
+    /*IE4-IE9*/  
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100); 
+}
+.prev_box{position: absolute;top: 425px;height: 50px;width: 50px;left: 25px;cursor: pointer;background: #000;
+/* older safari/Chrome browsers */  
+    -webkit-opacity: 0.5;  
+    /* Netscape and Older than Firefox 0.9 */  
+    -moz-opacity: 0.5;  
+    /* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/  
+    -khtml-opacity: 0.5;  
+    /* IE9 + etc...modern browsers */  
+    opacity: .5;  
+    /* IE 4-9 */  
+    filter:alpha(opacity=50);  
+    /*This works in IE 8 & 9 too*/  
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";  
+    /*IE4-IE9*/  
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50);  
+}
+.prev_box:hover,.prev_box.hover{background: #000;
+/* older safari/Chrome browsers */  
+    -webkit-opacity: 0.8;  
+    /* Netscape and Older than Firefox 0.9 */  
+    -moz-opacity: 0.8;  
+    /* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/  
+    -khtml-opacity: 0.8;  
+    /* IE9 + etc...modern browsers */  
+    opacity: .8;  
+    /* IE 4-9 */  
+    filter:alpha(opacity=80);  
+    /*This works in IE 8 & 9 too*/  
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";  
+    /*IE4-IE9*/  
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);  
+}
+.prev_box .prev{height: 30px;width: 30px;padding: 10px;}
+.prev img,.next img{height: 100%;width: 100%;}
+.next_box{position: absolute;top: 425px;height: 50px;width: 50px;right: 25px;cursor: pointer;background: #000;
+/* older safari/Chrome browsers */  
+    -webkit-opacity: 0.5;  
+    /* Netscape and Older than Firefox 0.9 */  
+    -moz-opacity: 0.5;  
+    /* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/  
+    -khtml-opacity: 0.5;  
+    /* IE9 + etc...modern browsers */  
+    opacity: .5;  
+    /* IE 4-9 */  
+    filter:alpha(opacity=50);  
+    /*This works in IE 8 & 9 too*/  
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";  
+    /*IE4-IE9*/  
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50);  
+}
+.next_box:hover,.next_box.hover{background: #000;
+/* older safari/Chrome browsers */  
+    -webkit-opacity: 0.8;  
+    /* Netscape and Older than Firefox 0.9 */  
+    -moz-opacity: 0.8;  
+    /* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/  
+    -khtml-opacity: 0.8;  
+    /* IE9 + etc...modern browsers */  
+    opacity: .8;  
+    /* IE 4-9 */  
+    filter:alpha(opacity=80);  
+    /*This works in IE 8 & 9 too*/  
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";  
+    /*IE4-IE9*/  
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);  
+}
+.next_box .next{height: 30px;width: 30px;padding: 10px;}
+/* 企业介绍 */
+.introduce{background: #f5f5f5;padding: 70px 0;}
+.introduce .content{margin-top: 50px;padding: 30px;background: #fff;color: #222;}
+.introduce .content p{margin-bottom: 16px;font-size: 18px;font-weight: 300;line-height: 1.8;color: #222;word-wrap: break-word;}
+.introduce .content p img{width: 100%;display: block;}
+
+/* 工程展示 */
+.engineering_exhibition{padding: 70px 0;background: #f5f5f5;}
+.engineering_list_box{position: relative;height: 220px;overflow: hidden;margin: 0 auto;margin-top: 30px;}
+.engineering_list_box .list_box{position: relative;height: 100%;width: 100%;overflow: hidden;}
+.engineering_list_box .list{height: 220px;position: absolute;top: 0;margin-right: 4px;padding-right: 4px;}
+.engineering_list_box .list .content{width: 100%;height: 220px;line-height: 220px;text-align: center;position: absolute;top: 0;left: 0;color: #fff;font-size: 14px;background: #000;
+/* older safari/Chrome browsers */  
+    -webkit-opacity: 0;  
+    /* Netscape and Older than Firefox 0.9 */  
+    -moz-opacity: 0;  
+    /* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/  
+    -khtml-opacity: 0;  
+    /* IE9 + etc...modern browsers */  
+    opacity: 0;  
+    /* IE 4-9 */  
+    filter:alpha(opacity=0);  
+    /*This works in IE 8 & 9 too*/  
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";  
+    /*IE4-IE9*/  
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);  
+}
+.engineering_list_box .list:hover .content,.engineering_list_box .list.hover .content{
+	/* older safari/Chrome browsers */  
+    -webkit-opacity: 0.8;  
+    /* Netscape and Older than Firefox 0.9 */  
+    -moz-opacity: 0.8;  
+    /* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/  
+    -khtml-opacity: 0.8;  
+    /* IE9 + etc...modern browsers */  
+    opacity: 0.8;  
+    /* IE 4-9 */  
+    filter:alpha(opacity=80);  
+    /*This works in IE 8 & 9 too*/  
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";  
+    /*IE4-IE9*/  
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);  
+}
+.engineering_list_box .list img{display: block;width: 100%;height: 100%;}
+.engineering_list_box .prev,.engineering_list_box .next{position: absolute;height: 60px;width: 40px;top: 75px;cursor: pointer;
+background: #000;
+/* older safari/Chrome browsers */  
+    -webkit-opacity: 0.5;  
+    /* Netscape and Older than Firefox 0.9 */  
+    -moz-opacity: 0.5;  
+    /* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/  
+    -khtml-opacity: 0.5;  
+    /* IE9 + etc...modern browsers */  
+    opacity: .5;  
+    /* IE 4-9 */  
+    filter:alpha(opacity=50);  
+    /*This works in IE 8 & 9 too*/  
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";  
+    /*IE4-IE9*/  
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50);  
+}
+.engineering_list_box .prev:hover,.engineering_list_box .prev.hover,.engineering_list_box .next:hover,.engineering_list_box .next.hover{
+/* older safari/Chrome browsers */  
+    -webkit-opacity: 0.8;  
+    /* Netscape and Older than Firefox 0.9 */  
+    -moz-opacity: 0.8;  
+    /* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/  
+    -khtml-opacity: 0.8;  
+    /* IE9 + etc...modern browsers */  
+    opacity: .8;  
+    /* IE 4-9 */  
+    filter:alpha(opacity=80);  
+    /*This works in IE 8 & 9 too*/  
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";  
+    /*IE4-IE9*/  
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);  
+}
+.engineering_list_box .prev{left: 0px;}
+.engineering_list_box .prev img,.engineering_list_box .next img{height: 30px;width: 30px;margin: 15px 5px;}
+.engineering_list_box .next{right: 4px;}
+
+/* 致辞 */
+.speech{background: #fff;padding: 70px 0;}
+.speech .content{overflow: hidden;background: #fff;padding: 30px;margin-top: 30px;zoom:1;}
+.speech .content .img_box{width: 38%;margin-right: 2%;float: left;height: 320px;margin-top: 23px;}
+.speech .content .img_box img{width: 100%;display: block;height: 100%;}
+.speech .content .substance{float: left;width: 60%;}
+.speech .content .substance h1{font-size: 36px;font-weight: 300;color: #37474f;padding-bottom: 5px;text-indent: 36px;}
+.speech .content .substance p{margin-bottom: 16px;font-size: 18px;line-height: 1.8;font-weight: 300;color: #222;}
+
+/* 底部 */
+.footer_box{padding: 20px 0;border-top: 1px solid #f0f2f5;}
+.footer_box p{color: #aaa;text-align: center;margin-bottom: 11px;}
+.powered_by_metinfo{text-align: center;color: #aaa;}
+.powered_by_metinfo a{color: #89bceb;}
+.synopsis_footer{background: #fff;}
+/* synopsis_box */
+.synopsis_box{padding: 30px 0 70px;overflow: hidden;}
+.synopsis_box .content{width: 75%;float: left;background: #fff;}
+.synopsis_box .content .title{padding: 30px;}
+.synopsis_box .content .title h1{font-size: 32px;line-height: 1.5;margin-bottom: 5px;text-shadow: rgba(0,0,0,.15) 0 0 1px;color: #37474f;font-weight: 400;}
+.synopsis_box .content .title .info{padding-bottom: 20px;border-bottom: 1px solid #f0f2f5;font-size: 16px;font-weight: 300;color: #a3afb7;}
+.synopsis_box .content .title .info span{padding-right: 10px;}
+.synopsis_box .content .title .info span img{vertical-align: middle;padding-right: 5px;display: inline-block;width: 16px;}
+.synopsis_box .content .substance{padding: 30px;}
+.synopsis_box .content .substance p{margin-bottom: 16px;color: #222;line-height: 1.8;font-weight: 300;word-wrap: break-word;font-size: 18px;}
+.synopsis_box .content .substance p img{display: block;max-width: 100%;_width: 100%;}
+.synopsis_box .content .substance .project_list_box{width: 100%;zoom: 1;font-size: 0px;}
+.synopsis_box .content .substance .project_list_box .img_box{width: 100%;height: 189px;}
+.substance_img_box{text-align: center;}
+.substance_img_box img{max-width: 100%;+width: 100%;}
+.synopsis_box .content .substance .project_list_box .img_box img{width: 100%;height: 100%;}
+.synopsis_box .content .substance .project_list_box .list_box{float: left;width: 30%;margin-right: 3%;margin-bottom: 10px;zoom: 1;outline: 1px solid #ccc;}
+.synopsis_box .content .substance .project_list_box p{height: 26px;line-height: 26px;font-size: 12px;color: #37474f;font-weight: bold;text-align: center;margin-bottom: 0;}
+.synopsis_box .sidebar{width: 25%;float: right;}
+.synopsis_box .sidebar .recommend{margin-left: 30px;background: #fff;overflow: hidden;}
+.synopsis_box .sidebar ul{padding: 40px 20px;}
+.synopsis_box .sidebar ul li{padding: 10px 15px;border: 1px solid #e4eaec;margin-bottom: -1px;}
+.synopsis_box .sidebar ul li:first-child{border-top-left-radius: 3px;border-top-right-radius: 3px;}
+.synopsis_box .sidebar ul li:last-child{border-bottom-left-radius: 3px;border-bottom-right-radius: 3px;}
+.synopsis_box .sidebar ul li a{color: #2a333c;font-size: 15px;}
+.synopsis_box .sidebar ul li a:hover{color: #62a8ea;text-decoration: underline;}
+.synopsis_box .sidebar ul li a.active{color: #62a8ea;}
+/* contact_us */
+.contact_us_content li{margin-bottom: 16px;    font-size: 18px;font-weight: 300;line-height: 1.8;color: #222;word-wrap: break-word;}
+.contact_us_content .content_titile{font-weight: 700;line-height: 1.42857;font-size: 18px;}
+/* 特效 */
+/* top */
+@-webkit-keyframes slide-top {
+	0% {
+		opacity:0;
+		-webkit-transform:translate3d(0,-100%,0);
+		transform:translate3d(0,-100%,0)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0)
+	}
+}
+@-o-keyframes slide-top {
+	0% {
+		opacity:0;
+		-webkit-transform:translate3d(0,-100%,0);
+		transform:translate3d(0,-100%,0)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0)
+	}
+}
+@keyframes slide-top {
+	0% {
+		opacity:0;
+		-webkit-transform:translate3d(0,-100%,0);
+		transform:translate3d(0,-100%,0)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0)
+	}
+}
+/* bottom */
+@-webkit-keyframes slide-bottom {
+	0% {
+		opacity:0;
+		-webkit-transform:translate3d(0,100%,0);
+		transform:translate3d(0,-100%,0)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0)
+	}
+}
+@-o-keyframes slide-bottom {
+	0% {
+		opacity:0;
+		-webkit-transform:translate3d(0,100%,0);
+		transform:translate3d(0,-100%,0)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0)
+	}
+}
+@keyframes slide-bottom {
+	0% {
+		opacity:0;
+		-webkit-transform:translate3d(0,100%,0);
+		transform:translate3d(0,-100%,0)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0)
+	}
+}
+/* left */
+@-webkit-keyframes slide-left {
+	0% {
+		opacity:0;
+		-webkit-transform:translate3d(-100%,0,0);
+		transform:translate3d(-100%,0,0)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0)
+	}
+}
+@-o-keyframes slide-left {
+	0% {
+		opacity:0;
+		-webkit-transform:translate3d(-100%,0,0);
+		transform:translate3d(-100%,0,0)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0)
+	}
+}
+@keyframes slide-left {
+	0% {
+		opacity:0;
+		-webkit-transform:translate3d(-100%,0,0);
+		transform:translate3d(-100%,0,0)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0)
+	}
+}
+/* right */
+@-webkit-keyframes slide-right {
+	0% {
+		opacity:0;
+		-webkit-transform:translate3d(100%,0,0);
+		transform:translate3d(100%,0,0)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0)
+	}
+}
+@-o-keyframes slide-right {
+	0% {
+		opacity:0;
+		-webkit-transform:translate3d(100%,0,0);
+		transform:translate3d(100%,0,0)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0)
+	}
+}
+@keyframes slide-right {
+	0% {
+		opacity:0;
+		-webkit-transform:translate3d(100%,0,0);
+		transform:translate3d(100%,0,0)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0)
+	}
+}
+/* scale */
+@-webkit-keyframes fade-scale {
+	0% {
+		opacity:0;
+		-webkit-transform:scale(.2);
+		-o-transform:scale(.2);
+		transform:scale(.2)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:scale(1);
+		-o-transform:scale(1);
+		transform:scale(1)
+	}
+}
+@-o-keyframes fade-scale {
+	0% {
+		opacity:0;
+		-webkit-transform:scale(.2);
+		-o-transform:scale(.2);
+		transform:scale(.2)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:scale(1);
+		-o-transform:scale(1);
+		transform:scale(1)
+	}
+}
+@keyframes fade-scale {
+	0% {
+		opacity:0;
+		-webkit-transform:scale(.2);
+		-o-transform:scale(.2);
+		transform:scale(.2)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:scale(1);
+		-o-transform:scale(1);
+		transform:scale(1)
+	}
+}
+/* fade */
+@-webkit-keyframes fade {
+	0% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+}
+@-o-keyframes fade {
+	0% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+}
+@keyframes fade {
+	0% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+}
+.animation_active.animation_fade {
+	-webkit-animation-name: fade;
+	animation-name: fade;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.animation_active.animation_slide_top {
+	-webkit-animation-name: slide-top;
+	animation-name: slide-top;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.animation_active.animation_slide_bottom {
+	-webkit-animation-name: slide-bottom;
+	animation-name: slide-bottom;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.animation_active.animation_slide_left {
+	-webkit-animation-name: slide-left;
+	animation-name: slide-left;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.animation_active.animation_slide_right {
+	-webkit-animation-name: slide-right;
+	animation-name: slide-right;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.animation_active.animation_fade_scale {
+	-webkit-animation-name: fade-scale;
+	animation-name: fade-scale;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
