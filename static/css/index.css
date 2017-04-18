@@ -217,7 +217,7 @@ background: #000;
 .speech .content .img_box{width: 38%;margin-right: 2%;float: left;height: 320px;margin-top: 23px;}
 .speech .content .img_box img{width: 100%;display: block;height: 100%;}
 .speech .content .substance{float: left;width: 60%;}
-.speech .content .substance h1{font-size: 36px;font-weight: 300;color: #37474f;padding-bottom: 5px;}
+.speech .content .substance h1{font-size: 36px;font-weight: 300;color: #37474f;padding-bottom: 5px;text-indent: 36px;}
 .speech .content .substance p{margin-bottom: 16px;font-size: 18px;line-height: 1.8;font-weight: 300;color: #222;}
 
 /* 底部 */
@@ -474,39 +474,51 @@ background: #000;
 	}
 }
 .animation_active.animation_fade {
-	-webkit-animation: fade 1s ease-out both;
-	-o-animation-name: fade 1s ease-out both;
-	animation-name: fade 1s ease-out both;
-	opacity: 0;
+	-webkit-animation-name: fade;
+	animation-name: fade;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
 }
 
 .animation_active.animation_slide_top {
-	-webkit-animation:slide-top 1s ease-out both;
-	-o-animation-name:slide-top 1s ease-out both;
-	animation-name:slide-top 1s ease-out both;
-	opacity: 0;
+	-webkit-animation-name: slide-top;
+	animation-name: slide-top;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
 }
 .animation_active.animation_slide_bottom {
-	-webkit-animation:slide-bottom 1s ease-out both;
-	-o-animation-name:slide-bottom 1s ease-out both;
-	animation-name:slide-bottom 1s ease-out both;
-	opacity: 0;
+	-webkit-animation-name: slide-bottom;
+	animation-name: slide-bottom;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
 }
 .animation_active.animation_slide_left {
-	-webkit-animation:slide-left 1s ease-out both;
-	-o-animation-name:slide-left 1s ease-out both;
-	animation-name:slide-left 1s ease-out both;
-	opacity: 0;
+	-webkit-animation-name: slide-left;
+	animation-name: slide-left;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
 }
 .animation_active.animation_slide_right {
-	-webkit-animation:slide-right 1s ease-out both;
-	-o-animation-name:slide-right 1s ease-out both;
-	animation-name:slide-right 1s ease-out both;
-	opacity: 0;
+	-webkit-animation-name: slide-right;
+	animation-name: slide-right;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
 }
 .animation_active.animation_fade_scale {
-	-webkit-animation:fade-scale 1s ease-out both;
-	-o-animation-name:fade-scale 1s ease-out both;
-	animation-name:fade-scale 1s ease-out both;
-	opacity: 0;	
+	-webkit-animation-name: fade-scale;
+	animation-name: fade-scale;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
 }

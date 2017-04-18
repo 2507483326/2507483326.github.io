@@ -197,8 +197,18 @@
 				'padding': '0 15px'
 			});
 		}
+
+		if (window_width < 800) {
+			$('.inner_box').css({
+				'width':(800 - 30) + 'px',
+				'padding': '0 15px'
+			});
+		}
 	}
 	softAdaption();
+	window.onresize = function () {
+		softAdaption();
+	}
 </script>
 <script type="text/javascript">
 	$('.banner').slide({
